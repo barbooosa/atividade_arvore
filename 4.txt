@@ -1,0 +1,51 @@
+1. BubbleSort
+Descrição: Compara elementos adjacentes e os troca, repetindo o processo até a lista estar ordenada.
+
+Melhor Caso (lista já ordenada):
+Comparações: O algoritmo percorre a lista, mas sem realizar trocas.
+Trocas: Nenhuma troca é feita.
+Complexidade: O(n) (uma passagem pela lista).
+
+
+Pior Caso (lista ordenada de forma inversa):
+Comparações: O algoritmo percorre a lista e compara todos os elementos.
+Trocas: Muitas trocas são feitas para ordenar a lista.
+Complexidade: O(n²) (cada elemento precisa ser movido várias vezes).
+
+
+Caso Médio (ordem aleatória):
+Comparações: O algoritmo percorre a lista várias vezes para ordenar.
+Trocas: O número de trocas é grande.
+Complexidade: O(n²) (comportamento similar ao pior caso).
+
+
+Resumo do BubbleSort:
+Melhor Caso: O(n) (lista já ordenada).
+Pior Caso: O(n²) (lista inversamente ordenada).
+Caso Médio: O(n²) (ordem aleatória).
+
+
+2. SelectionSort
+Descrição: Encontra o menor (ou maior) elemento e o coloca na posição correta, repetindo para os outros elementos.
+
+Melhor Caso (lista já ordenada):
+Comparações: O algoritmo ainda percorre a lista inteira para encontrar o menor elemento.
+Trocas: Apenas n-1 trocas no máximo.
+Complexidade: O(n²) (não há otimização para lista ordenada).
+
+
+Pior Caso (lista ordenada de forma inversa):
+Comparações: O algoritmo percorre a lista inteira a cada iteração.
+Trocas: No pior caso, ele faz n-1 trocas.
+Complexidade: O(n²) (sempre realiza as mesmas comparações).
+
+
+Caso Médio (ordem aleatória):
+Comparações: O número de comparações é sempre O(n²), independentemente da ordem dos elementos.
+Trocas: O número de trocas é sempre O(n).
+Complexidade: O(n²) (sempre o mesmo comportamento).
+
+Resumo do SelectionSort:
+Melhor Caso: O(n²) (não há otimizações).
+Pior Caso: O(n²) (ordem inversa).
+Caso Médio: O(n²) (ordem aleatória).
