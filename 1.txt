@@ -1,0 +1,58 @@
+O algoritmo BubbleSort é um dos algoritmos de ordenação mais simples, mas também o menos eficiente para grandes volumes de dados. O seu funcionamento se baseia na ideia de "burbulhar" os elementos para suas posições corretas ao longo de várias passagens na lista.
+
+Funcionamento:
+
+O algoritmo percorre a lista várias vezes.
+Em cada passagem, ele compara dois elementos adjacentes. Se o primeiro for maior que o segundo, eles são trocados.
+Isso faz com que, a cada passagem, o maior elemento "suba" para o final da lista (como uma bolha que sobe na água).
+Esse processo é repetido até que a lista esteja ordenada, ou seja, até que uma passagem inteira não precise de trocas.
+Exemplo: Considerando a lista [5, 2, 9, 1]:
+
+Primeira passagem:
+
+Compara 5 e 2, troca -> [2, 5, 9, 1]
+Compara 5 e 9, sem troca -> [2, 5, 9, 1]
+Compara 9 e 1, troca -> [2, 5, 1, 9]
+
+Segunda passagem:
+Compara 2 e 5, sem troca -> [2, 5, 1, 9]
+Compara 5 e 1, troca -> [2, 1, 5, 9]
+
+Terceira passagem:
+Compara 2 e 1, troca -> [1, 2, 5, 9]
+Agora a lista está ordenada.
+
+Complexidade:
+
+Melhor caso: 
+𝑂(𝑛) (quando a lista já está ordenada).
+Pior e médio caso: 
+O(n^2) (quando a lista está em ordem reversa ou aleatória).
+
+2. SelectionSort:
+O algoritmo SelectionSort também é simples, mas funciona de maneira diferente. Em vez de "burbulhar" os elementos como o BubbleSort, ele encontra o menor (ou maior) elemento em cada passagem e o coloca na posição correta.
+
+Funcionamento:
+
+O algoritmo percorre a lista e, a cada iteração, encontra o menor (ou maior) elemento no restante da lista.
+Esse elemento é trocado com o primeiro elemento não ordenado da lista.
+Esse processo é repetido até que toda a lista esteja ordenada.
+Exemplo: Considerando a lista [5, 2, 9, 1]:
+
+Primeira passagem:
+O menor elemento é 1. Troca 5 com 1 -> [1, 2, 9, 5]
+
+Segunda passagem:
+O menor elemento no restante da lista é 2. Não é necessário trocar -> [1, 2, 9, 5]
+
+Terceira passagem:
+O menor elemento no restante da lista é 5. Troca 9 com 5 -> [1, 2, 5, 9]
+Agora a lista está ordenada.
+
+Complexidade:
+Melhor, pior e médio caso: 
+
+O(n^2).
+Comparação de trocas:
+BubbleSort tende a executar mais trocas de elementos, pois ele troca sempre que encontra dois elementos fora de ordem.
+SelectionSort, por outro lado, faz menos trocas, pois ele encontra o menor (ou maior) elemento e o coloca diretamente na posição correta, realizando uma troca por passagem (no máximo uma troca por iteração).
