@@ -1,0 +1,41 @@
+O algoritmo de ordenação BubbleSort realiza um número de comparações menores ao utilizar a versão otimizada, onde a variável "ordenado" é usada para verificar se houve trocas durante uma iteração. Isso permite que o algoritmo saia do loop mais cedo se a lista já estiver ordenada. Um exemplo de uso do BubbleSort otimizado pode ser encontrado no código abaixo:
+void BubbleSort(Vector a, int n) 
+{ 
+  parada A:   for(int j=n-1; j > 0; j--) 
+       { 
+  parada B:      for(int k=0; k < j; k++) 
+             { 
+  parada C:           if (a[k+1] < a[k]) 
+                  { 
+  parada D:                Swap(a,k,k+1); 
+                  } 
+             } 
+        } 
+} 
+
+exemplos de trocas dentro desse código:
+
+[ 5 3 2 1 4 ] ==> a[0]:5 … a[4]:4 
+j=4: 
+    k:0   a[1],a[0]  swap 3,5          [3 5 2 1 4]   
+    k:1   a[2],a[1]  swap 5,2          [3 2 5 1 4] 
+    k:2   a[3],a[2]  swap 5,1          [3 2 1 5 4] 
+    k:3   a[4],a[3]  swap 5,4          [3 2 1 4 5] 
+    k:4   k == j     stop B: 
+j=3: 
+    k:0 a[1],a[0]    swap 3,2          [2 3 1 4 5] 
+    k:1 a[2],a[1]    swap 3,1          [2 1 3 4 5] 
+    k:2 a[3],a[2]                      [2 1 3 4 5] 
+    k:3 k ==j        stop B: 
+j=2: 
+    k:0 a[1],a[0]    swap 2,1          [1 2 3 4 5] 
+    k:1 a[2],a[1]                      [1 2 3 4 5] 
+    K2  k == j       stop B: 
+j=1: 
+    k:0 a[1],a[0]                      [1 2 3 4 5] 
+    k:1  k == j       stop B: 
+j=0:                  stop A: 
+
+
+
+Ao utilizar o método do early stopping, o algoritmo BubbleSort otimizado verifica se houve trocas durante uma iteração. Se não houve trocas, isso indica que a lista já está ordenada, e o algoritmo pode parar imediatamente. Isso otimiza o algoritmo, pois evita comparações desnecessárias.
