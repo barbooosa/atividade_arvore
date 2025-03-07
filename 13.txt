@@ -1,0 +1,5 @@
+Para o melhor caso, o algoritmo InsertionSort tem complexidade O(n), pois o laço interno é executado apenas uma vez para cada elemento, e não há trocas necessárias.
+
+Para o caso médio, o algoritmo InsertionSort tem complexidade O(n²), pois o laço interno é executado em média n/2 vezes para cada elemento, e há trocas necessárias.
+
+Para o pior caso, o algoritmo InsertionSort tem complexidade O(n²), pois o laço interno é executado n vezes para cada elemento, e há trocas necessárias.

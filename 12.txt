@@ -1,0 +1,2 @@
+O InsertionSort pode ser mais eficiente em conjunto de dados pequeneos ou parcialmente ordenados. Por ser um algoritmo estável, ele mantém a ordem relativa dos elementos com os mesmos valores.
+Também, não requer espaço extra, ou seja, utiliza menos capacidade computacional para realizar as trocas.

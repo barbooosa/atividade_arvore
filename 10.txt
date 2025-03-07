@@ -1,0 +1,4 @@
+O algoritmo INsertionSort funciona da seguinte maneira: Começando com o segundo elemento e , a partir dele, o compara com o anterior e movendo-o para posição correta, e assim repetindo o processo para os elementos restantes.
+No laço externo, o algoritmo itera sobre os elementos da lista, começando do segundo elemento (índice 1) até o último elemento (índice n-1).
+No laço interno, o algoritmo compara o elemento atual (elemento[j]) com o elemento anterior (elemento[j-1]). Se o elemento atual for menor que o elemento anterior, o algoritmo move o elemento anterior para a posição seguinte (elemento[j+1]) e decrementa o índice j. Isso continua até que o elemento atual seja maior ou igual ao elemento anterior, ou até que o índice j seja menor que 0.
+Após o laço interno, o algoritmo insere o elemento atual na posição correta, movendo todos os elementos maiores para a direita.
