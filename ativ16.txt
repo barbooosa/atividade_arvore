@@ -1,0 +1,9 @@
+O QuickSort se torna claramente superior em um tamanho maior,já que o InsertionSort é mais eficiente para um tamanho menor, pois faz trocas específicas para cada elemento.
+
+InsertionSort:
+Melhor caso: O(n) — quando o vetor já está ordenado.
+Pior e caso médio: O(n²) — quando o vetor está em ordem inversa ou parcialmente ordenado, com muitas comparações e trocas.
+
+QuickSort:
+Melhor e caso médio: O(n log n) — em situações médias e quando o pivô é bem escolhido.
+Pior caso: O(n²) — ocorre quando o pivô é mal escolhido (como no caso do QuickSort tradicional com pivô como o último elemento em um vetor já ordenado ou quase ordenado).

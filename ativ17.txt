@@ -1,0 +1,3 @@
+Melhor e caso médio: O algoritmo divide o array de forma eficiente, com o pivô escolhendo elementos de forma que o problema seja reduzido para duas sublistas aproximadamente iguais. A complexidade de tempo resulta em O(n log n).
+
+Pior caso: Ocorre quando o pivô não divide o array de forma equilibrada. Em vez de dividir o problema de forma eficiente, o QuickSort faz muito trabalho desnecessário e a complexidade de tempo se torna O(n²). Isso geralmente acontece quando o array já está ordenado ou quase ordenado e o pivô escolhido é o primeiro ou o último elemento.
