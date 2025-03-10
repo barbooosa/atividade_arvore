@@ -1,0 +1,23 @@
+O QuickSort não é estável porque, durante o processo de particionamento (a operação principal do algoritmo), elementos com o mesmo valor podem ser trocados de posição entre eles. Isso ocorre porque, ao escolher um pivô, o algoritmo pode mover os elementos com o mesmo valor para diferentes lados do pivô, sem considerar sua ordem original.
+
+Durante a partição, o QuickSort simplesmente compara os elementos com o pivô e os reorganiza com base na comparação, o que pode resultar na troca de elementos com o mesmo valor.
+
+Exemplo:
+
+Valor	Identificador
+5	A
+3	B
+5	C
+2	D
+5	E
+
+
+Resultado com o QuickSort (Instável):
+Se o QuickSort for usado nesse exemplo, ele pode reordenar os objetos com valor 5 de forma diferente, como por exemplo:
+
+Valor	Identificador
+2	D
+3	B
+5	E
+5	A
+5	C

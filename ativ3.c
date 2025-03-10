@@ -22,20 +22,21 @@ void insertionSort(int arr[], int n) {
             j--;
         }
         arr[j + 1] = key;
-};
+    }
+}
 
 // Função para imprimir o array
-void printArray(int arr[], int size) ;{
+void printArray(int arr[], int size) { 
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
-};
+}
 
-int main() ;{
+int main() { 
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
-    
+
     printf("Lista original: \n");
     printArray(arr, n);
 

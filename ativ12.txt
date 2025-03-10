@@ -1,2 +1,10 @@
-O InsertionSort pode ser mais eficiente em conjunto de dados pequeneos ou parcialmente ordenados. Por ser um algoritmo estável, ele mantém a ordem relativa dos elementos com os mesmos valores.
+O InsertionSort pode ser mais eficiente em conjunto de dados pequenos, que estejam ordenados ou parcialmente ordenados. Por ser um algoritmo estável, ele mantém a ordem relativa dos elementos com os mesmos valores.
 Também, não requer espaço extra, ou seja, utiliza menos capacidade computacional para realizar as trocas.
+Exemplo: 
+
+Na lista  [1, 2, 3, 4, 5]:
+InsertionSort: O algoritmo verifica que todos os elementos estão no lugar certo e faz apenas comparações, sem precisar realizar trocas. A complexidade será O(n).
+
+BubbleSort: Mesmo que os elementos já estejam quase ordenados, o algoritmo ainda realizará várias trocas desnecessárias, levando O(n²).
+
+SelectionSort: Realiza n-1 comparações para encontrar o menor elemento, mesmo que ele já esteja no lugar correto, resultando em O(n²).
